@@ -1,0 +1,19 @@
+{
+    "name": "true9/onesignal-wrapper",
+    "description": "Wrapper for OneSignal's REST API",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Tom Lovelady",
+            "email": "tom@true9.co.uk"
+        }
+    ],
+    "require": {
+        "symfony/var-dumper": "^5.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "true9\\OSWrapper\\": "src/"
+        }
+    }
+}

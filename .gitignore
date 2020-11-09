@@ -1,0 +1,8 @@
+# Test application
+index.php;
+
+# Dependencies
+vendor
+
+# PHPStorm configs
+.idea/
