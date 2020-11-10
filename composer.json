@@ -9,11 +9,16 @@
         }
     ],
     "require": {
-        "symfony/var-dumper": "^5.1"
+        "php": "^7.0",
+        "ext-curl": "*",
+        "ext-json": "*"
     },
     "autoload": {
         "psr-4": {
             "true9\\OSWrapper\\": "src/"
         }
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^5.1"
     }
 }
