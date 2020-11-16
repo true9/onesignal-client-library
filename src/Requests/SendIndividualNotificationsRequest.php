@@ -11,6 +11,7 @@ class SendIndividualNotificationsRequest extends AbstractRequest
     private $includedIds = [];
     private $contents = [];
     private $data = [];
+    private $url;
 
     public function dispatch()
     {
@@ -24,6 +25,7 @@ class SendIndividualNotificationsRequest extends AbstractRequest
             'app_id' => $this->appId,
             'include_player_ids' => $this->includedIds,
             'contents' => $this->contents,
+            'url' => $this->url
         ];
 
         if (count(array_keys($this->data))) {
@@ -49,6 +51,12 @@ class SendIndividualNotificationsRequest extends AbstractRequest
     public function setData($data = [])
     {
         $this->data = $data;
+        return $this;
+    }
+
+    public function setUrl($url = null)
+    {
+        $this->url = $url;
         return $this;
     }
 }
