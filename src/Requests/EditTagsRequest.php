@@ -21,7 +21,7 @@ class EditTagsRequest extends AbstractRequest
             throw new IllegalArgumentException("External User ID must be provided");
         }
 
-        $endpoint = "/users/{$this->externalUserId}";
+        $endpoint = "/apps/{$this->appId}/users/{$this->externalUserId}";
         $this->curl = new CurlClient($endpoint);
 
         $properties = [

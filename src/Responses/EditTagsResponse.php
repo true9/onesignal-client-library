@@ -6,7 +6,7 @@ class EditTagsResponse extends AbstractResponse
 {
     public function build($response = null)
     {
-        if ($response['info']['http_code'] == 200) {
+        if (in_array($response['info']['http_code'], [200, 202])) {
             $this->success = true;
         } else {
             $this->success = false;
