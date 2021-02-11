@@ -2,7 +2,7 @@
 
 namespace true9\OSWrapper\Responses;
 
-class ViewDevicesResponse extends AbstractResponse
+class EditTagsResponse extends AbstractResponse
 {
     public function build($response = null)
     {

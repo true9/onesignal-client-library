@@ -4,7 +4,6 @@ namespace true9\OSWrapper\Responses;
 
 class SendIndividualNotificationsResponse extends AbstractResponse
 {
-
     public function build($response = null)
     {
         $status = $response['info']['http_code'];

@@ -12,11 +12,11 @@ class CurlClient
         $this->curl = curl_init($this->url($endpoint));
     }
 
-    public function post($data = [])
+    public function post($data = [], $method = 'POST')
     {
         $json = json_encode($data);
         curl_setopt_array($this->curl, [
-            CURLOPT_CUSTOMREQUEST => "POST",
+            CURLOPT_CUSTOMREQUEST => $method,
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_POSTFIELDS => $json,
             CURLOPT_HTTPHEADER => [
@@ -32,6 +32,11 @@ class CurlClient
             'result' => json_decode($result, true),
             'info' => curl_getinfo($this->curl)
         ];
+    }
+
+    public function put($data = [])
+    {
+        return $this->post($data, 'PUT');
     }
 
     public function get()

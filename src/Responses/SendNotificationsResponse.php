@@ -4,7 +4,6 @@ namespace true9\OSWrapper\Responses;
 
 class SendNotificationsResponse extends AbstractResponse
 {
-
     public function build($response = null)
     {
         $status = $response['info']['status_code'];
@@ -19,7 +18,5 @@ class SendNotificationsResponse extends AbstractResponse
         if (count($errors) > 0) {
             $this->partialSuccess = true;
         }
-
-
     }
 }
