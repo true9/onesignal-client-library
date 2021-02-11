@@ -4,8 +4,8 @@
     "type": "library",
     "authors": [
         {
-            "name": "Tom Lovelady",
-            "email": "tom@true9.co.uk"
+            "name": "true9",
+            "email": "chris@true9.co.uk"
         }
     ],
     "require": {
