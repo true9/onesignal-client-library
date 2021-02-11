@@ -6,7 +6,7 @@ use true9\OSWrapper\CurlClient;
 use true9\OSWrapper\Exceptions\IllegalArgumentException;
 use true9\OSWrapper\Responses\EditTagsResponse;
 
-class EdiTagsRequest extends AbstractRequest
+class EditTagsRequest extends AbstractRequest
 {
     private $externalUserId;
     private $tags = [];
