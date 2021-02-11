@@ -6,3 +6,4 @@ vendor
 
 # PHPStorm configs
 .idea/
+/nbproject
